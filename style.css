@@ -1,0 +1,121 @@
+html{
+    font-size: 16px;
+    font-family: "Staatliches";
+    margin: 0;
+    background-image: url("./Images/pic6Port.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #364042;
+}
+
+body{
+
+}
+
+header{
+   display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.nav{
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.nav a{
+    font-size: 3.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-in-out;
+    color: beige;
+}
+
+.nav a:hover{
+    color: orange;
+    font-size: 4rem;
+}
+
+.nav .dot{
+    color: red;
+    width: 6px;
+    height: 6px;
+    background: orange;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+.nav a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateY(-150px);
+    transform: translateY(-150px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.nav a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateY(-80px);
+    transform: translateY(-80px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.nav a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+}
+
+.name{
+    font-size: 2.45rem;
+    font-family: "Indie Flower";
+    color: beige;
+    padding-left: 2rem;
+}
+
+#TU{
+    color: orange;
+}
+.title{
+    font-size: 2.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 12.25rem;
+    padding-left: 52rem;
+}
+
+.title h1{
+    padding-top: 12.5rem;
+    color: beige;
+}
+
+.aboutMe{
+    font-size: 2rem;
+    color: beige;
+    display: block;
+    background-color: #364042;
+    border-radius: 5px;
+    text-align: center;
+}
+.aboutMe h2{
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+#textAbout{
+    margin-left: 5px;
+}
+
+
+
