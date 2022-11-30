@@ -2,14 +2,13 @@ html{
     font-size: 16px;
     font-family: "Staatliches";
     margin: 0;
-    background-image: url("./Images/pic6Port.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: #364042;
 }
 
-body{
-
+.pic{
+    background-image: url("../Images/pic6Port.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 header{
@@ -116,6 +115,63 @@ header{
 #textAbout{
     margin-left: 5px;
 }
+
+.about-title, .work-title{
+    font-size: 3rem;
+    color: orange;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+    color: beige;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.work-title{
+    padding-top: 2rem;
+    height: 1rem;
+}
+
+.work-gif{
+    width: 75rem;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.work-title a{
+    text-decoration: none;
+    color: orange;
+}
+.work-title a:hover{
+    color: darkred;
+}
+
+.work{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 2.5rem;
+    align-items: center;
+    color: beige;
+}
+
+
+
+
+
+footer{
+
+}
+
 
 
 
