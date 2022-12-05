@@ -1,4 +1,4 @@
-import Typed from 'typed.js'
+//import Typed from 'typed.js'
 
 //import Swup from 'swup/dist/swup'
 
@@ -11,8 +11,25 @@ import Typed from 'typed.js'
     backSpeed: 15,
     loop: true
 })
-
 */
-//let x = new Swup();
+const symbols = ['HTML', 'CSS', 'JavaScript'];
+        let count = 0;
+        const element = document.getElementById("change");
+        console.log(element);
+        window.onload = iteration = () => {
+            element.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+            if (count % 2 !== 0) {
+                element.classList.add("out");
+            } else {
+                element.classList.remove("out");
+            }
+            count++;
+            // How often the code should run && repeat the change
+            if (count === symbols.length * 5) {
+                count = 0;
+            }
+        };
+        let inthandle = setInterval(iteration, 1000);
+        iteration();
 
 

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="CSS/style-index.css">
     <link rel="stylesheet" href="CSS/transition-style.css">
     <script defer src="./node_modules/swup/dist/swup.min.js"></script>
-    <script type="module" defer src="/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <title>Document</title>
 </head>
@@ -24,7 +23,7 @@
         <nav class="nav">
             <a href="#about">About</a>
             <a href="#work">Work</a>
-            <a href="/contact.html">Contact Me</a>
+            <a href="#contact">Contact Me</a>
             <div class="dot"></div>
         </nav>
     </header>
@@ -50,13 +49,13 @@
         })
     </script>
 </div>
-<div class="work-title">
+<div class="work-title" id="work">
     <a href="https://github.com/roccoluff" target="_blank"><h2>My Work so far</h2></a>
 </div>
 <div class="work-gif">
     <img src="./Images/giv-clickme.gif" alt="">
 </div>
-<div class="work" id="work">
+<div class="work">
     <ul>
         <li>Analysis and Linear Algebra</li>
         <li>Algorithms and Data Structures with C</li>
@@ -65,13 +64,31 @@
         <li>Data Analysis with SQL</li>
         <li>Computer Networks and Distributed Systems</li>
         <li>Full Stack Engineer CodeCademy Course</li>
-
     </ul>
+</div>
+<div class="contact-title" id="contact">
+    <h1>Finally, to contact me...</h1>
+</div>
+<div class="contact">
+    <p>Whatever it is, i'll want to hear about it!</p>
+    <div>
+    <a id="linkedin-logo" href="https://www.linkedin.com/in/rocco-raffaele-luffarelli/" target="_blank">
+        <img src="./Images/LinkedIn_logo.png.webp" alt="" width="40">
+    </a>
+    </div>
+    <div>
+    <a href="https://github.com/roccoluff" target="_blank"><img src="./Images/github-mark-white.png" alt=""></a>
+    </div>
+    <div>
+    <a id="mail-logo" href="mailto: rocco@luffarelli.it"><img src="./Images/email-logo-png-27.png" alt=""></a>
+    </div>
 </div>
 </main>
 <footer>
-    <a href="https://www.linkedin.com/in/rocco-raffaele-luffarelli/" target="_blank">
-    <img src="./Images/LinkedIn_logo.png.webp" alt="" width="40"></a>
+    <div>
+        <p>Made with <span id="heart-logo">♥</span> in Berlin</p>
+    </div>
 </footer>
+<script type="module" src="/main.js"></script>
 </body>
 </html>
